@@ -1,19 +1,13 @@
 'use strict';
 
-var express = require('express');
-var app = express();
-var timestamp = require('./timestamp.js');
+const express = require('express');
+const app = express();
+const timestamp = require('./timestamp.js');
 
-var port = 3000;
+const port = 3000;
 
-app.get('/', function (req, res) {
-    res.sendFile(__dirname + '/index.htm');
-});
+app.get('/', (req, res) => res.sendFile(__dirname + '/index.htm'));
 
-app.get('/:time', function (req, res) {
-    res.send(timestamp(req.params.time));
-});
+app.get('/:time', (req, res) => res.send(timestamp(req.params.time)));
 
-app.listen(port, function () {
-    console.log(`Server on http://localhost:${port}`)
-});
+app.listen(port, () => console.log(`Server on http://localhost:${port}`));
