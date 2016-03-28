@@ -1,0 +1,79 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        <title>Timestamp microservice</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:400,700,500,400italic,300italic,300,100,100italic,900,900italic,700italic,500italic&subset=latin,cyrillic">
+        <link rel="stylesheet" href="https://code.getmdl.io/1.1.1/material.blue_grey-red.min.css">
+        <link rel="stylesheet" href="https://file.myfontastic.com/n6vo44Re5QaWo8oCKShBs7/icons.css">
+        
+        <script src="https://code.getmdl.io/1.1.1/material.min.js" defer></script>
+        <style>
+            header{
+                display: flex !important;
+            }
+            a[class]{
+                text-decoration: none;
+            }
+            a:hover{
+                text-decoration: none;
+            }
+            .content{
+                max-width: 1000px;
+                padding: 0 1rem;
+                margin: 0 auto;
+            }
+            .content_main{
+                padding: 3rem 1rem;
+            }
+            .social{
+                font-size: 150%;
+            }
+            code{
+                white-space: pre-wrap;
+            }
+        </style>
+    </head>
+    <body>
+        <div class="mdl-layout">
+            <header class="mdl-layout__header">
+                <div class="content">
+                    <h1 class="mdl-layout__title">Timestamp microservice for <a href="https://www.freecodecamp.com/challenges/timestamp-microservice">FreeCodeCamp challnage</a></h1>
+                </div>
+            </header>
+            <div class="content content_main">
+                <h3>User stories:</h3>
+                <ul>
+                    <li>I can pass a string as a parameter, and it will check to see whether that string contains either a unix timestamp or a natural language date (example: January 1, 2016).</li>
+                    <li>If it does, it returns both the Unix timestamp and the natural language form of that date.</li>
+                    <li>If it does not contain a date or Unix timestamp, it returns null for those properties.</li>
+                </ul>
+                <h3>Example usage:</h3>
+                <a href="https://fcc-timestamp-alanev.com/February%205,%202016"><code>https://fcc-timestamp-alanev.com/February%205,%202016</code></a><br>
+                <a href="https://fcc-timestamp-alanev.com/1454619600"><code>https://fcc-timestamp-alanev.com/1454619600</code></a>
+                <h3>Example output:</h3>
+<code>
+{
+    "unix": 1454619600,
+    "natural": "February 5, 2016"
+}
+</code>
+            </div>
+        </div>
+        <footer class="mdl-mini-footer">
+            <div class="mdl-mini-footer__left-section">
+                Made by <a href="http://alanev.ru">@alanev</a>
+            </div>
+            <div class="mdl-mini-footer__right-section social">
+                <a href="mailto:e@alanev.ru" id="s1" title="Email" class="socicon-mail"></a>
+                <div class="mdl-tooltip mdl-tooltip--top" for="s1">Email</div>
+                <a href="https://github.com/alanev" id="s2" class="socicon-github"></a>
+                <div class="mdl-tooltip mdl-tooltip--top" for="s2">Github</div>
+                <a href="https://getpocket.com/@alanev" id="s3" class="socicon-pocket"></a>
+                <div class="mdl-tooltip mdl-tooltip--top" for="s3">Pocket</div>
+                <a href="skype:e.alanev" id="s4" class="socicon-skype"></a>
+                <div class="mdl-tooltip mdl-tooltip--top" for="s4">Skype</div>
+            </div>
+        </footer>
+    </body>
+</html>
